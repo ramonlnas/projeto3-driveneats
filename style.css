@@ -256,11 +256,20 @@ h5 {
 
 .check {
     display: none;
-}
-
-.aparecer {
-    display: inherit;
     color:#32B72F;
     margin-left: 143px;
-    margin-bottom: 26px;
+    margin-top: -30px;
+
+}
+
+.selecionado .check {
+    display: flex;
+}
+
+.selecionadoD .check {
+    display: flex;
+}
+
+.selecionadoS .check {
+    display: flex;
 }

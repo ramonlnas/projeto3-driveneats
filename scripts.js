@@ -88,7 +88,7 @@ function validacao (){
     let total =  (pratos + bebidas + dessert).toFixed(2);
 
     let text = 'https://wa.me/?text=';
-    let text1 = `Olá gostaria de fazer o pedido:\n -Prato: ${titulo1}\n -Bebida: ${titulo2}\n -Sobremesa: ${titulo3}\n -Total:R$ ${total}`
+    let text1 = `Olá gostaria de fazer o pedido:-Prato: ${titulo1}\n -Bebida: ${titulo2}\n -Sobremesa: ${titulo3}\n -Total:R$ ${total}`
 
     let encoded = encodeURIComponent(text1)
     window.open(text + text1, "_blank")

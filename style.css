@@ -2,11 +2,22 @@
     box-sizing: border-box;
 }
 body {
-    width: 414px;
+    width: 414px; 
     background: #E5E5E5;
     height: 100%;
-
+    
+    font-family: 'Roboto', sans-serif;
 }
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.app {
+    margin-top: 95px;
+    margin-bottom:95px;
+}
+
 .menu-topo {
     width: 100%;
     height: 92px;
@@ -14,6 +25,9 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding-left: 21px;
     margin-bottom: 31px;
+    position: fixed;
+    top:0;
+    left: 0;
 }
 
 .menu-topo h1 {
@@ -21,32 +35,108 @@ body {
     font-size: 44px;
     line-height: 55px;
     color: #FFFFFF;
+    font-family: 'Righteous';
 }
 
 .menu-topo h2 {
     font-weight: 400;
     font-size: 18px;
     color: #FFFFFF;
+    font-family: 'Righteous';
+
 }
 
-.conteiner {
-    background: #E5E5E5;
-}
 
 .conteiner-food {
     display: flex;
     margin-bottom: 27px;
+    padding-left: 17px;
+    overflow-x: scroll
 }
+
+.conteiner-drinks {
+    display: flex;
+    margin-bottom: 27px;
+    padding-left: 17px;
+    overflow-x: scroll
+}
+
+.conteiner-sobremesa {
+    display: flex;
+    margin-bottom: 27px;
+    padding-left: 17px;
+    overflow-x: scroll
+}
+
+
 
 .foods {
     background: #FFFFFF;
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
     border-radius: 9px;
-    margin-left: 19px;
+    margin-right:10px;
 }
 
-.conteiner-bebidas {
-    display: flex;
+.drinks {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    margin-right:10px;
+
+}
+
+.sobremesas {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    margin-right:10px;
+
+}
+
+.foods1 {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    margin-right:10px;
+}
+
+.foods2 {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    margin-right:10px;
+}
+
+.drinks1 {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    margin-right:10px;
+
+}
+
+.drinks2 {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    margin-right:10px;
+
+}
+
+.sobremesas1 {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    margin-right:10px;
+
+}
+
+.sobremesas2 {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    margin-right:10px;
+
 }
 
 
@@ -57,12 +147,12 @@ body {
     color: #333333;   
     margin-bottom:17px;
     margin-left: 19px;
-
+    font-family: 'Righteous';
 }
 
 
 
-.foods img{
+img{
     width: 144px;
     height: 87px;
     border-radius: 4px;
@@ -72,7 +162,7 @@ body {
     margin-bottom:8px  
   
 }
-.foods h3 {
+h3 {
     font-weight: 700;
     font-size: 16px;
     color: #333333;
@@ -83,7 +173,7 @@ body {
 
 }
 
-.foods h4 {
+h4 {
     font-weight: 300;
     width: 147px;
     height: 39px;
@@ -96,7 +186,7 @@ body {
     margin-bottom:4px 
 }
 
-.foods h5 {
+h5 {
     width: 66px;
     height: 19px;
     color: #000000;
@@ -116,6 +206,9 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 16px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
 .caixa-pedido {
     width: 364px;
@@ -127,4 +220,47 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+    letter-spacing: 0.018em;
+}
+
+.selecionado {
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
+    border-radius: 9px;
+    
+}
+
+.selecionadoD {
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
+    border-radius: 9px;
+}
+
+.selecionadoS {
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
+    border-radius: 9px;
+}
+
+.escondido {
+    background: #32B72F;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.check {
+    display: none;
+}
+
+.aparecer {
+    display: inherit;
+    color:#32B72F;
+    margin-left: 143px;
+    margin-bottom: 26px;
 }
